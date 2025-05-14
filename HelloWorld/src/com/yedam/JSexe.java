@@ -7,7 +7,7 @@ public class JSexe {
 		// 임의의 수를 생성, 1 ~ 100 사이의 임의의 값 생성
 		int sum = 0;
 		for(int i = 1; i <=5; i++) {
-		int result = (int) (Math.random() * 100) + 1;
+		int result = (int) (Math.random() * 10) + 1;
 		sum += result;
 	} // end of main
 
