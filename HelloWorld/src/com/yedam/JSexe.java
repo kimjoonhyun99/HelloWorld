@@ -9,6 +9,7 @@ public class JSexe {
 		for(int i = 1; i <=5; i++) {
 		int result = (int) (Math.random() * 100) + 1;
 		sum += result;
+		}
 	} // end of main
 
 	public static void test() {
