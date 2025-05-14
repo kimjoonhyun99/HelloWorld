@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 public class JSexe {
 	public static void main(String[] args) {
-		// 임의의 수를 생성, 1 ~ 10 사이의 임의의 값 생성
+		// 임의의 수를 생성, 1 ~ 10 사이의 임의의 값 생성11
 		int sum = 0;
 
 
