@@ -38,7 +38,7 @@ public class JSexe {
 //		test4();
 //		test5();
 //		test6();
-		test7();
+//		test7();
 	} // end of main
 
 	// "30" vs 30 // Interger.parseInt = "숫자" >> 문자열숫자
@@ -132,7 +132,8 @@ public class JSexe {
 				break;
 			}
 			System.out.println("입력한 값은 " + msg);
-			str += msg + " , ";
+			str += msg + " ";
 		}System.out.println(str + " 입니다.");
 	}
+	
 }// end of class
