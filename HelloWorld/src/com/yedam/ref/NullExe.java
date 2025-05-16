@@ -25,7 +25,7 @@ public class NullExe {
 //		
 //		for (int i = 0; i < intAry.length; i++) {
 //			System.out.printf("[%d]번째의 값: %d\n", i, intAry[i]);
-		}
+//		}
 		
 		// 배열선언 : double 값을 담은 dblAry
 		// 10.2, 23.2, 34.5

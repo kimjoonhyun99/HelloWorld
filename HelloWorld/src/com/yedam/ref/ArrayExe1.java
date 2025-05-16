@@ -3,25 +3,29 @@ package com.yedam.ref;
 public class ArrayExe1 { // 코드는 메소드 안에 넣어야 한다.
 
 	public static void main(String[] args) {
-
-		// int 배열 => intAry : 10, 17, 22, 31, 55, 24
-		int[] intAry = { 10, 17, 22, 31, 55, 24 };
-		// 최고값 구하기.
-		int temp = 0;
-		for (int j = 0; j < intAry.length - 1; j++) {
-			for (int i = 0; i < intAry.length; i++) {
-				if (intAry[i] < intAry[i+1]) {
-					temp = intAry[i];
-					intAry[i] = intAry[i+1];
-					intAry[i+1] = temp;
-				}
+		
+		//Math.random 사용 10~ 100점 사이의 점수 생성.
+		//학생 10명의 점수를 생성하고 평균을 구하고 최고점수를 구한다.
+		//변수명 scoreAry
+		int[] scoreAry = new int[10];
+		int max = 0;
+		double avg = 0;
+		int sum = 0;
+		for(int i = 0; i < scoreAry.length-1; i++) {
+			scoreAry[i] = (int)(Math.random()*91) + 10;
+			if(max < scoreAry[i]) {
+				max = scoreAry[i];
 			}
-		} System.out.printf(" %d ", temp);
+			sum += scoreAry[i];
+		}avg = 1.0*sum/10;
+		System.out.printf("평균점수는 %.1f 점 이고 최고점은 %d 점 입니다.", avg, max);
+		
 //		test3();
 //		test4();
 //		test5();
 //		test6();
 //		test7();
+//		test8();
 	}// end of main
 
 	public static void test3() {
@@ -81,4 +85,7 @@ public class ArrayExe1 { // 코드는 메소드 안에 넣어야 한다.
 			System.out.println();
 		}
 	}
+	public static void test8() {
+	
+ 	}
 }// end of class
