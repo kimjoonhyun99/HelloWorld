@@ -46,7 +46,7 @@ public class app {
 					break;
 				}
 
-				for (int i = 0; i < sel; i++) {
+				for (int i = 0; i < 10; i++) {
 					System.out.printf("\ninfo[%d]아이디>> ", i);
 					String ID = snc.nextLine(); // 아이디
 					System.out.printf("\ninfo[%d]전화번호>> ", i);
@@ -93,8 +93,8 @@ public class app {
 						System.out.println(infor.name);
 						infor.point = Point;
 						info[i] = infor;
-						continue;
-					}
+						
+					}continue;
 				}
 			}
 
