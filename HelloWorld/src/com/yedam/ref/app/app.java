@@ -18,9 +18,9 @@ public class app {
 		Scanner snc = new Scanner(System.in);
 
 		while (run) {
-			System.out.println("-----------------------------------------------------------------------------------");
+			System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------");
 			System.out.println("1.회원등록 | 2.수정 | 3.삭제 | 4.조회 | 5.종료");
-			System.out.println("-----------------------------------------------------------------------------------");
+			System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------");
 			System.out.println("선택> ");
 
 			int selectNo = Integer.parseInt(snc.nextLine());
@@ -62,7 +62,7 @@ public class app {
 					infor.name = Name;
 					System.out.println(infor.name);
 					info[i] = infor;
-					continue;
+					break;
 				}
 			} else if (selectNo == 2) {
 				int re = 0;
