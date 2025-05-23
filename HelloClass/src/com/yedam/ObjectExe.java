@@ -1,8 +1,12 @@
 package com.yedam;
 
+import java.util.Scanner;
+
 public class ObjectExe {
 	public static void main(String[] args) {
-		// 호출하기
+		Scanner scn = new Scanner(System.in);
+		Calender.isLeapYear();
 		
+		 
 	}
 }

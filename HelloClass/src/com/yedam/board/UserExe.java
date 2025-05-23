@@ -44,7 +44,6 @@ public class UserExe {
 				}
 			}
 		}
-		System.out.println("올바른 정보를 입력하세요.");
 		return false;
 	}
 }

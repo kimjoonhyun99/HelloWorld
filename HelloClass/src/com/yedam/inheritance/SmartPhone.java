@@ -3,12 +3,11 @@ package com.yedam.inheritance;
 public class SmartPhone extends CellPhone {
 
 	int channel;
-	public SmartPhone() {
+	public SmartPhone() {}
 		public SmartPhone(String Model, String Color, int channel) {
-			super(Model, Color);
+			super();
 			this.channel = channel;
 		}
-	}
 
 	void watch() {
 		System.out.println(channel + " 을 시청합니다");

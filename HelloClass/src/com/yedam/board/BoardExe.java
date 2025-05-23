@@ -30,24 +30,22 @@ public class BoardExe {
 	}
 
 	void execute() {
-		System.out.println("아이디를 입력하세요.");
-		String uname = scn.nextLine();
-		System.out.println("비밀번호를 입력하세요.");
-		String passwd = scn.nextLine();
-		// 아이디 입력
-		// 비밀번호 입력
-		// 3번 기회 숙제
-		UserExe.login(uname, passwd);
-		if (UserExe.login(uname, passwd) == false) {
-			return;
-		}
-		boolean run = true;
+		boolean access = loginCheck();
+		boolean run = access;
 		while (run) {
 			System.out.println("---------------------------------------------------");
 			System.out.println("1.작성 2.수정 3.삭제 4.조회 5.종료");
 			System.out.println("---------------------------------------------------");
 			System.out.println("선택>> ");
-			int selectNo = Integer.parseInt(scn.nextLine());
+			int selectNo = 0;
+
+			try {
+				selectNo = Integer.parseInt(scn.nextLine());
+			} catch (NumberFormatException e) {
+				System.out.println("1~5번중에 선택");
+				continue;
+			}
+
 			switch (selectNo) {
 			case 1: // 추가
 				addBoard();
@@ -64,6 +62,7 @@ public class BoardExe {
 				run = false;
 			}// end of switch
 		} // end of while
+
 	}// end of execute
 
 	// 기능
@@ -211,4 +210,25 @@ public class BoardExe {
 			}
 		}
 	} // end of sort.
+
+	boolean loginCheck() {
+		for (int i = 1; i <= 3; i++) {
+			System.out.println("아이디를 입력하세요.");
+			String uname = scn.nextLine();
+			System.out.println("비밀번호를 입력하세요.");
+			String passwd = scn.nextLine();
+			UserExe.login(uname, passwd);
+			if (UserExe.login(uname, passwd) == true) {
+				System.out.println("환영합니다.");
+				return true;
+			} else {
+				if (i == 3) {
+					System.out.println("3번 실패하셨습니다. 프로그램을 종료합니다.");
+					return false;
+				}
+				System.out.println("정보를 다시 입력하세요.");
+				continue;
+			}
+		}return false;
+	}
 }

@@ -52,6 +52,6 @@ public class Member {
 	}
 	
 	public void showInfo() {
-		System.out.printf("이름은 %s, 연락처는 %s, 포인트는 %d\n", Member., phone, point);
+		System.out.printf("이름은 %s, 연락처는 %s, 포인트는 %d\n", memberName, phone, point);
 	}
 }

@@ -8,6 +8,6 @@ public class Student {
 	String studentName; // 이름 문자변수 지정
 	int score; // 점수 정수변수 지정
 	double height; // 키 실수변수 지정
-	Gender gen;// 성별 문자변수 지정
+	Gender gender;// 성별 문자변수 지정
 
 }

@@ -15,7 +15,7 @@ import java.util.Scanner;
  *   - 이름 (조회)
  */
 
-public class MemberExe {
+public class 5 {
 	public static void main(String[] args) {
 		boolean run = true; // 반복문 실행/종료
 		Member[] members = new Member[10]; // 저장공간으로 배열을 선언.
@@ -115,4 +115,4 @@ public class MemberExe {
 		System.out.println("*** end of prog ***");
 
 	} // end of main.
-}}
+}
